@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VietFood - Đồ ăn Viet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="#" alt ="Logo">
+        </a>
+    <nav>
+        <a href="trangChu.html">Trang chủ</a>
+        <a href="trangChu.html/#about">Giới thiệu</a>
+        <a href="#menu">Thực đơn</a>
+        <a href="trangChu.html/#contact">Liên hệ</a>
+    </nav>
+    </header>
+    <!-- tìm kiếm-->
+    <div>
+        <input type="text" id ="search-input" placeholder="Tìm món ăn...">
+    </div>
+    <!-- thực đơn -->
+    <main id="menu">
+    </main>
+    <div id="gio-hang-popup" class="modal">
+    <div class="modal-content">
+      <span id="dong-gio">&times;</span>
+      <h2>🛒 Món đã chọn</h2>
+      <ul id="ds-mua"></ul>
+      <p><strong>Tổng tiền:</strong> <span id="tong-tien-popup">0</span> VNĐ</p>
+    </div>
+    </div>
+    <footer>
+        <button id="xem-gio">🛒 Giỏ hàng <span id = "so-luong">0</span></button>
+    </footer>
+    <script src="timKiem.js"></script>
+</body>
+</html>
